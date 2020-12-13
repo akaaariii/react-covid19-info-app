@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import { InfoContainer, InfoTitle,InfoCardContainer,  InfoCard } from './Info.styles';
+import { InfoContainer, InfoTitle, InfoCardContainer, InfoCard } from './Info.styles';
 
 const Info = () => {
   const [data, setData] = useState({});
