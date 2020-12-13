@@ -3,12 +3,14 @@ import './App.css';
 
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import Info from './components/Info/Info';
 
 const App = () => {
+
   return (
     <div className="App">
       <Header />
-      <main>COVID-19 Info</main>
+      <Info />
       <Footer />
     </div>
   );

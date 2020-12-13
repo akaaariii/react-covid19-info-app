@@ -1,13 +1,9 @@
+*,*::before,*::after {
+  box-sizing: border-box;
+}
 .App {
-  /* text-align: center; */
   font-family: 'Lato', sans-serif;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-}
-main {
-  flex: 1;
-}
-a {
-  color: #FF2261;
 }
