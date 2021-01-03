@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { HeaderContainer, LogoContainer, Icon, Title } from './Header.styles';
+import { HeaderContainer, LogoContainer, Icon, Title } from './styles';
 
 const Header = () => {
   return (

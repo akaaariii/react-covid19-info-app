@@ -1,9 +1,18 @@
 import React, { useState, useEffect } from 'react';
 
-import { InfoContainer, InfoTitle, InfoCardContainer, InfoCard } from './Info.styles';
+import { InfoContainer, InfoTitle, InfoCardContainer, InfoCard } from './styles';
 
 const Info = () => {
-  const [data, setData] = useState({});
+  const [data, setData] = useState({
+    cases: 0, 
+    todayCases: 0, 
+    deaths: 0, 
+    todayDeaths: 0, 
+    recovered: 0, 
+    active: 0, 
+    tests: 0, 
+    affectedCountries: 0
+  });
 
   useEffect(() => {
     getData();
