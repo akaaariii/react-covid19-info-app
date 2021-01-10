@@ -1,19 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
-import { InfoContainer, InfoTitle, InfoCardContainer, InfoCard } from './Info.styles';
+import { InfoContainer, InfoTitle, InfoCardContainer, InfoCard } from './styles';
 
-const Info = () => {
-  const [data, setData] = useState({});
-
-  useEffect(() => {
-    getData();
-  }, []);
-
-  const getData = async () => {
-    const response = await fetch('https://disease.sh/v3/covid-19/all');
-    const data = await response.json();
-    setData(data);
-  }
+const Info = ({ data }) => {
 
   const {cases, todayCases, deaths, todayDeaths, recovered, active, tests, affectedCountries } = data;
 

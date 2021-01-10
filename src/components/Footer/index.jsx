@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { FooterContainer, FooterText, APIlink } from './Footer.styles';
+import { FooterContainer, FooterText, APIlink } from './styles';
 
 const Footer = () => {
   return (
